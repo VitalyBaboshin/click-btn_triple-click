@@ -1,3 +1,5 @@
+const { map, filter } = require('rxjs/operators');
+
 const classClick = document.getElementById('detailClick');
 classClick.addEventListener('click', (event) => {
     if (event.detail === 3) console.log('tripleclick');
@@ -17,6 +19,7 @@ function tripleClick() {
             }
             timeout = null;
             clickCount = 0;
+            // Время между кликами
         }, 250)
     }
 
