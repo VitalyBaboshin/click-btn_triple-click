@@ -13,6 +13,7 @@ function tripleClick() {
 
     function setUpTimer() {
         return setTimeout(() => {
+            // Необязательно
             console.log("Click count:", clickCount);
             if (clickCount === 3) {
                 console.log("Triple click");
